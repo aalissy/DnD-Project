@@ -1,7 +1,5 @@
 const User = require("./User");
 
-const Project = require("./Character");
-
 const Character = require("./Character");
 
 User.hasMany(Character, {
