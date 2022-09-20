@@ -37,10 +37,7 @@ User.init(
         len: [8],
       },
     },
-
   },
-
-  }
 
   // {
   //   hooks: {
@@ -68,7 +65,6 @@ User.init(
   //   underscored: true,
   //   modelName: 'user',
   // }
-
 );
 
 module.exports = User;
