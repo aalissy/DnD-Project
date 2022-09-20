@@ -4,13 +4,16 @@ const sequelize = require("../config/connection");
 class Character extends Model {}
 
 Character.init({
+
   //   unique id for each character
+
   id: {
     type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
   },
+
   //   this is the id that connects each character to its user
   user_id: {
     type: DataTypes.INTEGER,
@@ -220,4 +223,6 @@ Character.init({
     type: DataTypes.INTEGER,
     allowNull: true,
   },
+
+
 });
