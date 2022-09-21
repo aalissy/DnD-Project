@@ -1,15 +1,48 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DnD 5e Character Manager</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DnD 5e Character Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<body>
-    <div class=""
-      <button class="no-button" id="logout">logout</button>
-</body>
+
+  <body>
+    <div class="">
+      <header class="">
+        <h1>
+          <a href="">5e Character Manager</a>
+        </h1>
+        <nav>
+          <a href="">Create</a>
+          <a href="">My Characters</a>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+            <a href="/profile">profile</a>
+            |
+            <button class="no-button" id="logout">logout</button>
+          {{else}}
+            <a href="/login">login</a>
+          {{/if}}
+        </nav>
+      </header>
+      <main class="">
+        {{{body}}}
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+    <!-- Render script for logged in users only -->
+    {{#if logged_in}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+  </body>
+</html>
+
