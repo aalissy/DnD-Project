@@ -232,3 +232,5 @@ Character.init(
     modelName: "character",
   }
 );
+
+module.exports = Character;
