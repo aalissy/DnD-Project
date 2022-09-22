@@ -219,8 +219,45 @@ Character.init(
       type: DataTypes.INTEGER,
       allowNull: true,
     },
+    // misc fields
     ds_failure: {
       type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    equipment: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    inventory: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    proficiencies: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    features_traits: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    attacks: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    spell_slots: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    spells: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    character_description: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    notes: {
+      type: DataTypes.STRING,
       allowNull: true,
     },
   },
@@ -232,3 +269,5 @@ Character.init(
     modelName: "character",
   }
 );
+
+module.exports = Character;
