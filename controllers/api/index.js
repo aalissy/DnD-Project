@@ -4,6 +4,6 @@ const characterRoutes = require('./characterRoutes.js');
 const userRoutes = require('./userRoutes.js');
 
 router.use('/users', userRoutes);
-router.use('/players', characterRoutes);
+router.use('/characters', characterRoutes);
 
 module.exports = router;
