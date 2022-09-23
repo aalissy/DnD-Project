@@ -26,7 +26,7 @@ Character.init(
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
-      defaultValue: dataTypes.NOW,
+      defaultValue: DataTypes.NOW,
     },
     //   character name
     name: {

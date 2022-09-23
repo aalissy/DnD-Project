@@ -13,4 +13,4 @@ Character.belongsTo(User, {
 
 module.exports = { User, Character };
 
-module.exports = { User, Project };
+module.exports = { User, Character };
