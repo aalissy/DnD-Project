@@ -1,35 +1,20 @@
-<html lang="en">
+<div>
+  <h2>Login</h2>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DnD 5e Login</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="/css/jass.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
+  <form class="login-form">
     <div>
-      <h2>Login</h2>
-
-      <form class="login-form">
-        <div>
-          <label for="username-login">Username:</label>
-          <input class="form-input" type="text" id="username-login" />
-        </div>
-        <div>
-          <label for="password-login">Password:</label>
-          <input class="form-input" type="password" id="password-login" />
-        </div>
-        <div>
-          <button type="submit">Login</button>
-          <a href="/signup">Or Sign Up!</a>
-        </div>
-      </form>
+      <label for="username-login">Username:</label>
+      <input class="form-input" type="text" id="username-login" />
     </div>
-  </body>
-</html>
+    <div>
+      <label for="password-login">Password:</label>
+      <input class="form-input" type="password" id="password-login" />
+    </div>
+    <div>
+      <button type="submit">Login</button>
+      <a href="/signup">Or Sign Up!</a>
+    </div>
+  </form>
+</div>
+
 <script src="./js/login.js"></script>
