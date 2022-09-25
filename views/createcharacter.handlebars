@@ -18,11 +18,11 @@
               <input
                 type="number"
                 value="10"
-                id="strScore"
+                id="strength"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="strMod" /></td>
+            <td><input type="number" value="0" id="strength_save" /></td>
           </tr>
           <tr>
             <td>Dexterity</td>
@@ -30,11 +30,11 @@
               <input
                 type="number"
                 value="10"
-                id="dexScore"
+                id="dexterity"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="dexMod" /></td>
+            <td><input type="number" value="0" id="dexterity_save" /></td>
           </tr>
           <tr>
             <td>Constitution</td>
@@ -42,11 +42,11 @@
               <input
                 type="number"
                 value="10"
-                id="conScore"
+                id="constitution"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="conMod" /></td>
+            <td><input type="number" value="0" id="consitution_save" /></td>
           </tr>
           <tr>
             <td>Intelligence</td>
@@ -54,11 +54,11 @@
               <input
                 type="number"
                 value="10"
-                id="intScore"
+                id="intelligence"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="intMod" /></td>
+            <td><input type="number" value="0" id="intelligence_save" /></td>
           </tr>
           <tr>
             <td>Wisdom</td>
@@ -66,11 +66,11 @@
               <input
                 type="number"
                 value="10"
-                id="wisScore"
+                id="wisdom"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="wisMod" /></td>
+            <td><input type="number" value="0" id="wisdom_save" /></td>
           </tr>
           <tr>
             <td>Charisma</td>
@@ -78,11 +78,11 @@
               <input
                 type="number"
                 value="10"
-                id="chaScore"
+                id="charisma"
                 onchange="updateMods()"
               />
             </td>
-            <td><input type="number" value="0" id="chaMod" /></td>
+            <td><input type="number" value="0" id="charisma_save" /></td>
           </tr>
         </table>
       </div>
@@ -94,7 +94,7 @@
 
         <input
           type="number"
-          id="playerLevel"
+          id="level"
           min="1"
           max="20"
           value="1"
@@ -110,7 +110,7 @@
             <td>
               <input
                 type="checkbox"
-                id="dragonbornRace"
+                id="race"
                 onchange="updateRace();"
               />
             </td>
@@ -118,19 +118,19 @@
           </tr>
           <tr>
             <td>
-              <input type="checkbox" id="dwarfRace" onchange="updateRace();" />
+              <input type="checkbox" id="race" onchange="updateRace();" />
             </td>
             <td>Dwaf</td>
           </tr>
           <tr>
             <td>
-              <input type="checkbox" id="elfRace" onchange="updateRace();" />
+              <input type="checkbox" id="race" onchange="updateRace();" />
             </td>
             <td>Elf</td>
           </tr>
           <tr>
             <td>
-              <input type="checkbox" id="gnomeRace" onchange="updateRace();" />
+              <input type="checkbox" id="race" onchange="updateRace();" />
             </td>
             <td>Gnome</td>
           </tr>
@@ -138,7 +138,7 @@
             <td>
               <input
                 type="checkbox"
-                id="halfElfRace"
+                id="race"
                 onchange="updateRace();"
               />
             </td>
@@ -148,7 +148,7 @@
             <td>
               <input
                 type="checkbox"
-                id="halflingRace"
+                id="race"
                 onchange="updateRace();"
               />
             </td>
@@ -158,7 +158,7 @@
             <td>
               <input
                 type="checkbox"
-                id="halfOrcRace"
+                id="race"
                 onchange="updateRace();"
               />
             </td>
@@ -166,7 +166,7 @@
           </tr>
           <tr>
             <td>
-              <input type="checkbox" id="humanRace" onchange="updateRace();" />
+              <input type="checkbox" id="race" onchange="updateRace();" />
             </td>
             <td>Human</td>
           </tr>
@@ -174,7 +174,7 @@
             <td>
               <input
                 type="checkbox"
-                id="tieflingRace"
+                id="race"
                 onchange="updateRace();"
               />
             </td>
@@ -188,7 +188,7 @@
 
         <br />
 
-        <input type="number" id="profBonus" value="2" />
+        <input type="number" id="proficiency_bonus" value="2" />
 
         <h2 class="is-size-3 has-text-centered">Skills</h2>
 
@@ -198,11 +198,11 @@
               <input type="checkbox" id="acroProf" onchange="updateSkills();" />
             </td>
             <td>Acrobatics:</td>
-            <td><input type="number" id="acroScore" /></td>
+            <td><input type="number" id="acrobatics" /></td>
           </tr>
           <tr>
             <td>
-              <input type="checkbox" id="animProf" onchange="updateSkills();" />
+              <input type="checkbox" id="animal_handling" onchange="updateSkills();" />
             </td>
             <td>Animal Handling:</td>
             <td><input type="number" id="animScore" /></td>
@@ -212,116 +212,117 @@
               <input type="checkbox" id="arcaProf" onchange="updateSkills();" />
             </td>
             <td>Arcana:</td>
-            <td><input type="number" id="arcaScore" /></td>
+            <td><input type="number" id="arcana" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="athlProf" onchange="updateSkills();" />
             </td>
-            <td>Athetics:</td>
-            <td><input type="number" id="athlScore" /></td>
+            <td>Athletics:</td>
+            <td><input type="number" id="athletics" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="decProf" onchange="updateSkills();" />
             </td>
             <td>Deception:</td>
-            <td><input type="number" id="decScore" /></td>
+            <td><input type="number" id="deception" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="hisProf" onchange="updateSkills();" />
             </td>
             <td>History:</td>
-            <td><input type="number" id="hisScore" /></td>
+            <td><input type="number" id="history" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="insProf" onchange="updateSkills();" />
             </td>
             <td>Insight:</td>
-            <td><input type="number" id="insScore" /></td>
+            <td><input type="number" id="insight" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="intiProf" onchange="updateSkills();" />
             </td>
             <td>Intimidation:</td>
-            <td><input type="number" id="intiScore" /></td>
+            <td><input type="number" id="intimidation" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="invProf" onchange="updateSkills();" />
             </td>
             <td>Investigation:</td>
-            <td><input type="number" id="invScore" /></td>
+            <td><input type="number" id="investigation" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="medProf" onchange="updateSkills();" />
             </td>
             <td>Medicine:</td>
-            <td><input type="number" id="medScore" /></td>
+            <td><input type="number" id="medicine" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="natProf" onchange="updateSkills();" />
             </td>
             <td>Nature:</td>
-            <td><input type="number" id="natScore" /></td>
+            <td><input type="number" id="nature" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="percProf" onchange="updateSkills();" />
             </td>
             <td>Perception:</td>
-            <td><input type="number" id="percScore" /></td>
+            <td><input type="number" id="perception" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="perfProf" onchange="updateSkills();" />
             </td>
             <td>Performance:</td>
-            <td><input type="number" id="perfScore" /></td>
+            <td><input type="number" id="performance" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="persProf" onchange="updateSkills();" />
             </td>
             <td>Persuasion:</td>
-            <td><input type="number" id="persScore" /></td>
+            <td><input type="number" id="persuasion" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="relProf" onchange="updateSkills();" />
             </td>
             <td>Religion:</td>
-            <td><input type="number" id="relScore" /></td>
+            <td><input type="number" id="religion" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="sleiProf" onchange="updateSkills();" />
             </td>
             <td>Sleight of Hand:</td>
-            <td><input type="number" id="sleiScore" /></td>
+            <td><input type="number" id="sleight_of_hand" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="steProf" onchange="updateSkills();" />
             </td>
             <td>Stealth:</td>
-            <td><input type="number" id="steScore" /></td>
+            <td><input type="number" id="stealth" /></td>
           </tr>
           <tr>
             <td>
               <input type="checkbox" id="survProf" onchange="updateSkills();" />
             </td>
             <td>Survival:</td>
-            <td><input type="number" id="survScore" /></td>
+            <td><input type="number" id="survival" /></td>
           </tr>
         </table>
+        <button id="create">Create Character</button>
       </div>
     </div>
   </div>
-  <script src="/public/js/createchar.js"></script>
+  <script src="/js/createchar.js"></script>
 </body>
