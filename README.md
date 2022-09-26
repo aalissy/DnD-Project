@@ -1,27 +1,40 @@
-# DnD-Project
+# DnD Character Manager
 
-## USER STORIES
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-# User: new player
+## Description
 
-I want to be able to create a DnD character sheet without using the players handbook, in a way that is not overwhelming.
-I want to be able to log in and save and update my character sheet.
+This application is designed to make DnD 5e character creation quick and simple.
 
-# User: intermediate player
+## Table of Contents
 
-I want to be able to quickly and easily fill out and update my character sheet.
-I want to be able to log in and save my character sheet for later use.
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Testing](#testing)
+- [Questions](#questions)
 
-## MVP
+## Installation
 
-Create a character: fill out your character sheet and save/edit it.
-Assist new players with chartacter creation with a series of prompts.
+Simply access the application via https://serene-journey-88116.herokuapp.com/
 
-## model??
+## Usage
 
-on the homepage the player is presented with the option to begin as a new player, or to fill out a character sheet as an intermediate player.
-Selecting to begin as a new player will bring the user to the character creation page with the first module visible and a
+This program should be used to create, manage, and access character sheets remotely.
 
-## notes
+## License
 
-## things to consider
+Licensed by ISC
+
+## Contribution Guidelines
+
+https://github.com/aalissy/DnD-Project/issues
+
+## Testing
+
+This application is use-tested.
+
+## Questions
+
+Direct all questions to Github [https://github.com/aalissy/DnD-Project/]
