@@ -1,0 +1,11 @@
+  <div class="characters">
+    <div class="userCharacters">
+      <h3>Your Characters</h3>
+      <div id="myCharacters">
+        {{#each characters as |character|}}
+          <a class="charButton" href="/character/{{id}}">
+            {{character.race}}
+          </a>
+        {{/each}}
+      </div>
+    </div>
