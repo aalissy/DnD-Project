@@ -3,3 +3,12 @@
   margin: auto;
   display: block;
 }
+
+#cta-image {
+  display: block;
+  max-width: 50%;
+}
+
+#dwarf {
+  width: auto;
+}
