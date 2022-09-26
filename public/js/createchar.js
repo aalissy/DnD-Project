@@ -33,6 +33,75 @@ function updateProf() {
   }
 }
 
+// Update Ability Score based on race selected
+function updateRace() {
+  var strEle = document.getElementById("strScore");
+  var strScore = strEle.value;
+  var dexEle = document.getElementById("dexScore");
+  var dexScore = dexEle.value;
+  var intEle = document.getElementById("intScore");
+  var intScore = intEle.value;
+  var wisEle = document.getElementById("wisScore");
+  var wisScore = wisEle.value;
+  var chaEle = document.getElementById("chaScore");
+  var chaScore = chaEle.value;
+  var conEle = document.getElementById("conScore");
+  var conScore = conEle.value;
+
+  if (document.getElementById("dragonbornRace").checked == true) {
+    strScore = Number(strScore) + 2;
+    strEle.value = strScore;
+    chaScore = Number(chaScore) + 1;
+    chaEle.value = chaScore;
+  }
+  if (document.getElementById("dwarfRace").checked == true) {
+    conScore = Number(conScore) + 2;
+    conEle.value = conScore;
+  }
+  if (document.getElementById("elfRace").checked == true) {
+    dexScore = Number(dexScore) + 2;
+    dexEle.value = dexScore;
+  }
+  if (document.getElementById("gnomeRace").checked == true) {
+    intScore = Number(intScore) + 2;
+    intEle.value = intScore;
+  }
+  if (document.getElementById("halfElfRace").checked == true) {
+    chaScore = Number(chaScore) + 2;
+    chaEle.value = chaScore;
+  }
+  if (document.getElementById("halflingRace").checked == true) {
+    dexScore = Number(dexScore) + 2;
+    dexEle.value = dexScore;
+  }
+  if (document.getElementById("halfOrcRace").checked == true) {
+    strScore = Number(strScore) + 2;
+    strEle.value = strScore;
+    conScore = Number(conScore) + 1;
+    conEle.value = conScore;
+  }
+  if (document.getElementById("humanRace").checked == true) {
+    conScore = Number(conScore) + 1;
+    conEle.value = conScore;
+    strScore = Number(strScore) + 1;
+    strEle.value = strScore;
+    dexScore = Number(dexScore) + 1;
+    dexEle.value = dexScore;
+    intScore = Number(intScore) + 1;
+    intEle.value = intScore;
+    wisScore = Number(wisScore) + 1;
+    wisEle.value = wisScore;
+    chaScore = Number(chaScore) + 1;
+    chaEle.value = chaScore;
+  }
+  if (document.getElementById("tieflingRace").checked == true) {
+    chaScore = Number(chaScore) + 2;
+    chaEle.value = chaScore;
+    intScore = Number(intScore) + 1;
+    intEle.value = intScore;
+  }
+}
+
 // Update skills with ability score
 function updateSkills() {
   var profBonus = parseInt(document.getElementById("profBonus").value);
@@ -134,6 +203,7 @@ function updateSkills() {
   }
 }
 
+// Update values when level change
 function changeLevel() {
   updateProf();
   updateMods();
