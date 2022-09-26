@@ -6,19 +6,18 @@
     <title>DnD 5e Character Manager</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-      <script 
-        src="https://kit.fontawesome.com/1f9db43659.js" crossorigin="anonymous">
-      </script>
-    <link rel="stylesheet" href="/public/css/jass.css" />
-    <link rel="stylesheet" href="/public/css/style.css" />
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f9db43659.js"
+      crossorigin="anonymous"
+    >
+    </script>
+    <link rel="stylesheet" href="/css/jass.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <style>
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      .center { display: flex; justify-content: center; align-items: center; }
 
     </style>
   </head>
@@ -27,27 +26,29 @@
     <section class="hero has-background-black-bis">
       <div class="hero-body p-0">
         <figure class="image">
-          <img src="images/DNDBanner.jpg">
+          <img src="images/DNDBanner.jpg" />
         </figure>
       </div>
     </section>
     <div class="">
       <header class="">
-          <nav class="navbar center is-justify-content-space-evenly has-background-black-ter">
-            <a href="/createcharacter">Create</a>
-            <a href="/mycharacters">My Characters</a>
-            <a href="/about">About</a>
-            <!-- Conditionally render login or logout links -->
-            {{#if logged_in}}
-              <a href="/profile">Profile</a>
-              |
-              <button class="no-button" id="logout">Logout</button>
-            {{else}}
-              <a href="/login">Login
-                <i class="fa-solid fa-dice-d20"></i>
-              </a>
-            {{/if}}
-          </nav>
+        <nav
+          class="navbar center is-justify-content-space-evenly has-background-black-ter"
+        >
+          <a href="/createcharacter">Create</a>
+          <a href="/mycharacters">My Characters</a>
+          <a href="/about">About</a>
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+            <a href="/profile">Profile</a>
+            |
+            <button class="no-button" id="logout">Logout</button>
+          {{else}}
+            <a href="/login">Login
+              <i class="fa-solid fa-dice-d20"></i>
+            </a>
+          {{/if}}
+        </nav>
       </header>
       <main class="">
         {{{body}}}
