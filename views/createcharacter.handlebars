@@ -2,6 +2,102 @@
   <div class="container">
     <div class="columns">
       <div class="column">
+        <h2 class="is-size-3 has-text-centered">Races</h2>
+
+        <table class="table">
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="dragonbornRace"
+                onchange="updateRace();"
+              />
+            </td>
+            <td>Dragonborn [+2 Strength, +1 Charisma]</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="dwarfRace" onchange="updateRace();" />
+            </td>
+            <td>Dwarf [+2 Constitution]</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="elfRace" onchange="updateRace();" />
+            </td>
+            <td>Elf [+2 Dexterity]</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="gnomeRace" onchange="updateRace();" />
+            </td>
+            <td>Gnome [+2 Intelligence]</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="halfElfRace"
+                onchange="updateRace();"
+              />
+            </td>
+            <td>Half-Elf [+2 Charisma, +1 Two Other Abilities]</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="halflingRace"
+                onchange="updateRace();"
+              />
+            </td>
+            <td>Halfling [+2 Dexterity]</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="halfOrcRace"
+                onchange="updateRace();"
+              />
+            </td>
+            <td>Half-Orc [+2 Strength, +1 Constitution]</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" id="humanRace" onchange="updateRace();" />
+            </td>
+            <td>Human [+1 All Abilities]</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="tieflingRace"
+                onchange="updateRace();"
+              />
+            </td>
+            <td>Tiefling [+2 Charisma, +1 Intelligence]</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="column">
+        <h2 class="is-size-3 has-text-centered">Player Level</h2>
+
+        <br />
+
+        <input
+          type="number"
+          id="playerLevel"
+          min="1"
+          max="20"
+          value="1"
+          onchange="changeLevel();"
+        />
+
+        <br /><br />
+
         <h2 class="is-size-3 has-text-centered">Ability Scores</h2>
 
         <br />
@@ -83,102 +179,6 @@
               />
             </td>
             <td><input type="number" value="0" id="chaMod" /></td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="column">
-        <h2 class="is-size-3 has-text-centered">Player Level</h2>
-
-        <br />
-
-        <input
-          type="number"
-          id="playerLevel"
-          min="1"
-          max="20"
-          value="1"
-          onchange="changeLevel();"
-        />
-
-        <br /><br />
-
-        <h2 class="is-size-3 has-text-centered">Races</h2>
-
-        <table class="table">
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                id="dragonbornRace"
-                onchange="updateRace();"
-              />
-            </td>
-            <td>Dragonborn</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" id="dwarfRace" onchange="updateRace();" />
-            </td>
-            <td>Dwarf</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" id="elfRace" onchange="updateRace();" />
-            </td>
-            <td>Elf</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" id="gnomeRace" onchange="updateRace();" />
-            </td>
-            <td>Gnome</td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                id="halfElfRace"
-                onchange="updateRace();"
-              />
-            </td>
-            <td>Half-Elf</td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                id="halflingRace"
-                onchange="updateRace();"
-              />
-            </td>
-            <td>Halfling</td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                id="halfOrcRace"
-                onchange="updateRace();"
-              />
-            </td>
-            <td>Half-Orc</td>
-          </tr>
-          <tr>
-            <td>
-              <input type="checkbox" id="humanRace" onchange="updateRace();" />
-            </td>
-            <td>Human</td>
-          </tr>
-          <tr>
-            <td>
-              <input
-                type="checkbox"
-                id="tieflingRace"
-                onchange="updateRace();"
-              />
-            </td>
-            <td>Tiefling</td>
           </tr>
         </table>
       </div>
