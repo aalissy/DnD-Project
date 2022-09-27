@@ -1,11 +1,36 @@
-  <div class="characters">
-    <div class="userCharacters">
-      <h3>Your Characters</h3>
-      <div id="myCharacters">
-        {{#each characters as |character|}}
-          <a class="charButton" href="/character/{{id}}">
-            {{character.race}}
-          </a>
-        {{/each}}
+<div class="character-sheet">
+  {{#each characters as |character|}}
+        <span class="strength">Strength: {{characters.strength}}</span>
+        <span class="dexterity">Dexterity: {{characters.dexterity}}</span>
+        <span class="constitution">Constitution: {{characters.constitution}}</span>
+        <span class="intelligence">Intelligence: {{characters.intelligence}}</span>
+        <span class="wisdom">Wisdom: {{characters.wisdom}}</span>
+        <span class="charisma">Charisma: {{characters.charisma}}</span>
+        <span class="strength_save">Strength Save: {{characters.strength_save}}</span>
+        <span class="dexterity_save">Dexterity Save: {{characters.dexterity_save}}</span>
+        <span class="constitution_save">Constitution Save:{{characters.constitution_save}}</span>
+        <span class="intelligence_save">Intelligence Save: {{characters.intelligence_save}}</span>
+        <span class="wisdom_save">Wisdom Save: {{characters.wisdom_save}}</span>
+        <span class="charisma_save">Charisma Save: {{characters.charisma_save}}</span>
+        <span class="level">Level: {{characters.level}}</span>
+        <span class="proficiency_bonus">Proficiency Bonus: {{characters.proficiency_bonus}}</span>
+        <span class="acrobatics">Acrobatics: {{characters.acrobatics}}</span>
+        <span class="animal_handling">Animal Handling: {{characters.animal_handling}}</span>
+        <span class="arcana">Arcana: {{characters.arcana}}</span>
+        <span class="athletics">Athletics: {{characters.athletics}}</span>
+        <span class="deception">Deception: {{characters.deception}}</span>
+        <span class="history">History: {{characters.history}}</span>
+        <span class="insight">Insight: {{characters.insight}}</span>
+        <span class="intimidation">Intimidation: {{characters.intimidation}}</span>
+        <span class="investigation">Investigation: {{characters.investigation}}</span>
+        <span class="medicine">Medicine: {{characters.medicine}}</span>
+        <span class="nature">Nature: {{characters.nature}}</span>
+        <span class="perception">Perception: {{characters.perception}}</span>
+        <span class="performance">Performance: {{characters.performance}}</span>
+        <span class="persuasion">Persuasion: {{characters.persuasion}}</span>
+        <span class="religion">Religion: {{characters.religion}}</span>
+        <span class="sleight_of_hand">Sleight of Hand: {{characters.sleight_of_hand}}</span>
+        <span class="stealth">Stealth: {{characters.stealth}}</span>
+        <span class="survival">Survival: {{characters.survival}}</span>
       </div>
-    </div>
+    {{/each}}
