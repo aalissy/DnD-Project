@@ -39,8 +39,7 @@
           <a href="/mycharacters">My Characters</a>
           <a href="/about">About</a>
           <!-- Conditionally render login or logout links -->
-          {{#if logged_in}}
-            <a href="/profile">Profile</a>
+          {{#if loggedIn}}
             |
             <button class="no-button" id="logout">Logout</button>
           {{else}}
@@ -55,7 +54,7 @@
       </main>
     </div>
     <!-- Render script for logged in users only -->
-    {{#if logged_in}}
+    {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}
   </body>
