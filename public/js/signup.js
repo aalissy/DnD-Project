@@ -19,7 +19,7 @@ async function signupHandler(event) {
     });
     if (response.ok) {
       alert("Account created!");
-      document.location.replace("/homepage");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }
