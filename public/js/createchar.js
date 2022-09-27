@@ -209,3 +209,93 @@ function changeLevel() {
   updateMods();
   updateSkills();
 }
+
+const create = document.querySelector('.create');
+create.addEventListener('click', createCharacter);
+
+async function createCharacter(event) {
+  event.preventDefault();
+
+  const strScore = document.querySelector('#strScore').valueAsNumber;
+  const dexScore = document.querySelector('#dexScore').valueAsNumber;
+  const conScore = document.querySelector('#conScore').valueAsNumber;
+  const intScore = document.querySelector('#intScore').valueAsNumber;
+  const wisScore = document.querySelector('#wisScore').valueAsNumber;
+  const chaScore = document.querySelector('#chaScore').valueAsNumber;
+  const strMod = document.querySelector('#strMod').valueAsNumber;
+  const dexMod = document.querySelector('#dexMod').valueAsNumber;
+  const conMod = document.querySelector('#conMod').valueAsNumber;
+  const intMod = document.querySelector('#intMod').valueAsNumber;
+  const wisMod = document.querySelector('#wisMod').valueAsNumber;
+  const chaMod = document.querySelector('#chaMod').valueAsNumber;
+  const playerLevel = document.querySelector('#playerLevel').valueAsNumber;
+  const profBonus = document.querySelector('#profBonus').valueAsNumber;
+  const acroScore = document.querySelector('#acroScore').valueAsNumber;
+  const animScore = document.querySelector('#animScore').valueAsNumber;
+  const arcaScore = document.querySelector('#arcaScore').valueAsNumber;
+  const athlScore = document.querySelector('#athlScore').valueAsNumber;
+  const decScore = document.querySelector('#decScore').valueAsNumber;
+  const hisScore = document.querySelector('#hisScore').valueAsNumber;
+  const insScore = document.querySelector('#insScore').valueAsNumber;
+  const intiScore = document.querySelector('#intiScore').valueAsNumber;
+  const invScore = document.querySelector('#invScore').valueAsNumber;
+  const medScore = document.querySelector('#medScore').valueAsNumber;
+  const natScore = document.querySelector('#natScore').valueAsNumber;
+  const percScore = document.querySelector('#percScore').valueAsNumber;
+  const perfScore = document.querySelector('#perfScore').valueAsNumber;
+  const persScore = document.querySelector('#persScore').valueAsNumber;
+  const relScore = document.querySelector('#relScore').valueAsNumber;
+  const sleiScore = document.querySelector('#sleiScore').valueAsNumber;
+  const steScore = document.querySelector('#steScore').valueAsNumber;
+  const survScore = document.querySelector('#survScore').valueAsNumber;
+
+  const response = await fetch('/api/characters', {
+      method: 'POST', 
+      body: JSON.stringify({
+          strength: strScore,
+          dexterity: dexScore,
+          constitution: conScore,
+          intelligence: intScore,
+          wisdom: wisScore,
+          charisma: chaScore,
+          strength_save: strMod,
+          dexterity_save: dexMod,
+          constitution_save: conMod,
+          intelligence_save: intMod,
+          wisdom_save: wisMod,
+          charisma_save: chaMod,
+          level: playerLevel,
+          proficiency_bonus: profBonus,
+          acrobatics: acroScore,
+          animal_handling: animScore,
+          arcana: arcaScore,
+          athletics: athlScore,
+          deception: decScore,
+          history: hisScore,
+          insight: insScore,
+          intimidation: intiScore,
+          investigation: invScore,
+          medicine: medScore,
+          nature: natScore,
+          perception: percScore,
+          performance: perfScore,
+          persuasion: persScore,
+          religion: relScore,
+          sleight_of_hand: sleiScore,
+          stealth: steScore,
+          survival: survScore,
+      }),
+      headers: {
+          'Content-Type': 'application/json',
+      },
+  });
+  console.log(response);
+  if (response.ok) {
+    await response.json();
+      document.location.replace('/mycharacters');
+      console.log(response);
+      return response;
+  } else {
+      alert("I'm sorry! I couldn't create that character! Please try again later.");
+  }
+};
