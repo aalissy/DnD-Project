@@ -15,7 +15,7 @@ async function loginHandler(event) {
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
-      document.location.replace("/homepage");
+      document.location.replace("/");
     } else {
       let result = await response.json();
       alert(result.message);
