@@ -1,5 +1,6 @@
 #playerLevel,
-#profBonus {
+#profBonus,
+#hitdie {
   margin: auto;
   display: block;
 }
@@ -11,4 +12,8 @@
 
 #dwarf {
   width: auto;
+}
+
+::placeholder {
+  color: gray;
 }
